@@ -33,9 +33,12 @@ const SignIn = () => {
   const onSubmit = async (values: z.infer<typeof signInSchema>) => {
     try {
       const result = await handleCredentialSignIn(values);
+      console.log(result);
+      
     } catch (error) {
       console.error(error);
       console.log("An unexpected error happened");
+      setGlobalError("error happend");
     }
   };
   return (

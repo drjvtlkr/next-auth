@@ -7,7 +7,7 @@ export default function Page1() {
     <>
       <button
         onClick={() => {
-          session?.user && update({ ...session.user, name: "Sh ivshakti" });
+          session?.user && update({ ...session.user, name: "Shivshakti" });
         }}>
         Update session
       </button>
